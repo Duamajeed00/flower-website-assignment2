@@ -1,25 +1,4 @@
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer';
-
-// export default function Contact() {
-//   return (
-//     <div className="container">
-//       {/* <Navbar /> */}
-
-//       <main>
-//         <h2>Contact Us</h2>
-//         <p>We would love to hear from you! Please contact us at:</p>
-//         <p>Email: flowercollection@example.com</p>
-//         <p>Phone: +123 456 7890</p>
-//       </main>
-
-//       {/* <Footer /> */}
-//     </div>
-//   );
-// }
 "use client"
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -79,8 +58,6 @@ export default function Contact() {
           <button type="submit">Send Message</button>
         </form>
       </main>
-
-      {/* <Footer /> */}
     </div>
   );
 }

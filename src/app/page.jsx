@@ -1,5 +1,3 @@
-// import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
 import About from './about/page';
 import Contact from './contact/page';
 
@@ -14,7 +12,6 @@ export default function Home() {
 
   return (
     <div className="container">
-      {/* <Navbar /> */}
 
       <main>
         <h2>Our Beautiful Flowers</h2>
@@ -30,7 +27,6 @@ export default function Home() {
 
      <About />
      <Contact />
-      {/* <Footer /> */}
     </div>
   );
 }

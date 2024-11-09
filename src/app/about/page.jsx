@@ -1,24 +1,3 @@
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer';
-
-// export default function About() {
-//   return (
-//     <div className="container">
-//       {/* <Navbar /> */}
-
-//       <main>
-//         <h2>About Us</h2>
-//         <p>Welcome to our Flower Collection! We offer a variety of beautiful flowers for any occasion. Our goal is to bring nature closer to you.</p>
-//       </main>
-
-//       {/* <Footer /> */}
-//     </div>
-//   );
-// }
-
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer';
-
 export default function About() {
   const flowers = [
     {
@@ -60,7 +39,7 @@ export default function About() {
 
   return (
     <div className="container">
-      {/* <Navbar /> */}
+    
 
       <main>
         <h2>About Our Flowers</h2>
@@ -76,7 +55,7 @@ export default function About() {
         ))}
       </main>
 
-      {/* <Footer /> */}
+    
     </div>
   );
 }
