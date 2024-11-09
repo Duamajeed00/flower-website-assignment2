@@ -1,33 +1,177 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  background-color: #fff8e1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffeb3b;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Flower Grid */
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.flower-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+
+.flower-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.flower-card h3 {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #ffeb3b;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Global styles remain the same */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Page Styles */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.flower-section {
+  margin-bottom: 40px;
+}
+
+.flower-section h3 {
+  font-size: 24px;
+  color: #ff8a00;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.flower-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.flower-images img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.flower-section p {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flower-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flower-images img {
+    max-width: 100%;
+  }
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ff8a00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ff6a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 0 15px;
   }
 }
